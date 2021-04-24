@@ -1,0 +1,50 @@
+﻿<Window x:Class="ZajimavaCisla.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZajimavaCisla"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform Angle="-29.745" CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#FFD4F1F4" Offset="0"/>
+                <GradientStop Color="#FF75E6DA" Offset="0.609"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="I" Content="Největší dělitel" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="I_Click" Grid.ColumnSpan="1" Grid.Row="1" Margin="0" Background="#FF05445E" Foreground="White" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="II" Content="Nejmenší násobek" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="II_Click" Grid.ColumnSpan="1" Margin="0" Grid.Column="1" Grid.Row="1" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="III" Content="Rozklad prvočinitele" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="III_Click" Grid.ColumnSpan="1" Margin="0" Grid.Column="2" Grid.Row="1" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="IV" Content="Prvočísla" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="IV_Click" Grid.ColumnSpan="1" Margin="0" Grid.Column="3" Grid.Row="1" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="V" Content="Prvočísla palindromů" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="V_Click" Grid.ColumnSpan="1" Margin="0" Grid.Column="4" Grid.Row="1" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="VI" Content="Figurální čísla" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="VI_Click" Grid.ColumnSpan="1" Margin="0" Grid.Row="2" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="VII" Content="Leylandovy čísla" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="VII_Click" Grid.ColumnSpan="1" Margin="0" Grid.Row="2" Grid.Column="1" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="VIII" Content="Holodigitální čtverce" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="VIII_Click" Grid.ColumnSpan="1" Margin="0" Grid.Column="2" Grid.Row="2" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="IX" Content="Sheldonovy čísla" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="IX_Click" Grid.ColumnSpan="1" Margin="0" Grid.Column="3" Grid.Row="2" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Button x:Name="Settings" Content="Nastavení" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="120" Click="Settings_Click" Grid.ColumnSpan="1" Margin="0" Grid.Column="4" Grid.Row="2" Foreground="White" Background="#FF05445E" FontFamily="Franklin Gothic Medium"/>
+        <Frame x:Name="WindowFrame" Margin="10,19,10,1" VerticalAlignment="Stretch" Grid.ColumnSpan="5" Grid.Row="3" NavigationUIVisibility="Hidden" />
+        <TextBlock x:Name="Nadpis" Grid.ColumnSpan="5" HorizontalAlignment="Stretch" Margin="10,10,10,10" TextWrapping="Wrap" Text="Zajímavá čísla" VerticalAlignment="Stretch" Background="{x:Null}" FontFamily="Franklin Gothic Heavy" TextDecorations="Underline" FontSize="24" TextAlignment="Center"/>
+    </Grid>
+</Window>
