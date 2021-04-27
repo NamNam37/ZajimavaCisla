@@ -9,6 +9,12 @@
       Title="IV">
 
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="50,50,0,0" TextWrapping="Wrap" Text="Od" VerticalAlignment="Top" Width="50" FontFamily="Franklin Gothic Demi" FontSize="18"/>
+        <TextBox x:Name="Input1" HorizontalAlignment="Left" Height="40" Margin="100,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontFamily="Franklin Gothic Medium"/>
+        <TextBox x:Name="Input0" HorizontalAlignment="Left" Height="40" Margin="100,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontFamily="Franklin Gothic Demi"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="50,100,0,0" TextWrapping="Wrap" Text="Do" VerticalAlignment="Top" Width="50" FontFamily="Franklin Gothic Medium" FontSize="18"/>
+        <Button x:Name="Calculate" Content="Spočítat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="200,70,0,0" Height="50" Click="Calculate_Click" FontFamily="Franklin Gothic Medium"/>
+        <TextBlock x:Name="OutputField" HorizontalAlignment="Left" Height="200" Margin="330,88,0,0" TextWrapping="Wrap" Text="Výstup" VerticalAlignment="Top" Width="410" FontFamily="Franklin Gothic Medium"/>
+        <Label Content="Všechna prvočísla" HorizontalAlignment="Left" Height="35" Margin="50,10,0,0" VerticalAlignment="Top" Width="500" FontSize="20" FontFamily="Franklin Gothic Heavy"/>
     </Grid>
 </Page>

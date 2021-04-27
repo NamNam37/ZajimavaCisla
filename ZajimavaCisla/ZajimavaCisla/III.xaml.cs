@@ -24,5 +24,23 @@ namespace ZajimavaCisla
         {
             InitializeComponent();
         }
+
+        private void Calculate_Click(object sender, RoutedEventArgs e)
+        {
+            bool ValidniINP0 = long.TryParse(Input0.Text, out long input0);
+            bool ValidniINP1 = long.TryParse(Input1.Text, out long input1);
+
+            if (ValidniINP0 == false || ValidniINP1 == false)
+            {
+                OutputField.Text = "Vstupní hodnoty musí být pouze numerické.";
+            }
+            else if (input0 <= 0 || input1 <= 0)
+            {
+                OutputField.Text = "Vstupní hodnoty musí být positivní.";
+            }
+            else
+            {
+            }
+        }
     }
 }
