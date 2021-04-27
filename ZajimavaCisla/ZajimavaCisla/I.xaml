@@ -16,6 +16,7 @@
         <Button x:Name="Calculate" Content="Spočítat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="250,70,0,0" Height="50" Click="Calculate_Click" FontFamily="Franklin Gothic Medium"/>
         <TextBlock x:Name="OutputField" HorizontalAlignment="Left" Height="32" Margin="380,88,0,0" TextWrapping="Wrap" Text="Výstup" VerticalAlignment="Top" Width="410" FontFamily="Franklin Gothic Medium"/>
         <TextBlock x:Name="OutputField2" HorizontalAlignment="Left" Height="32" Margin="380,120,0,0" TextWrapping="Wrap" Text="Výstup Největší Dělitel" VerticalAlignment="Top" Width="410" FontFamily="Franklin Gothic Heavy" TextDecorations="Underline"/>
+        <Label Content="Největší společný dělitel" HorizontalAlignment="Left" Height="35" Margin="50,10,0,0" VerticalAlignment="Top" Width="500" FontSize="20" FontFamily="Franklin Gothic Heavy"/>
 
 
     </Grid>

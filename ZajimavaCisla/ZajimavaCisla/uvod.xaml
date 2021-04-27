@@ -9,6 +9,27 @@
       Title="uvod">
 
     <Grid>
-        
+        <Label Content="Vyber zajímavé číslo z horní nabídky. " HorizontalAlignment="Left" Height="35" Margin="49,12,0,0" VerticalAlignment="Top" Width="500" FontSize="20" FontFamily="Franklin Gothic Heavy"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="65" Margin="437,28,0,0" VerticalAlignment="Top" Width="15"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="40" Margin="446,16,0,0" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-43"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="40" Margin="428,17,0,0" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="45"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
     </Grid>
 </Page>

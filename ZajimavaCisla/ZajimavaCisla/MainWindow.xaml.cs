@@ -23,7 +23,7 @@ namespace ZajimavaCisla
         public MainWindow()
         {
             InitializeComponent();
-            //WindowFrame.Content = new uvod();
+            WindowFrame.Content = new uvod();
         }
 
         private void I_Click(object sender, RoutedEventArgs e)
