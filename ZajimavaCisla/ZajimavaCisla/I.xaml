@@ -9,7 +9,14 @@
       Title="I">
 
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="50,50,0,0" TextWrapping="Wrap" Text="Zadej 1. číslo" VerticalAlignment="Top" Width="100" FontFamily="Franklin Gothic Demi" FontSize="18"/>
+        <TextBox x:Name="Input1" HorizontalAlignment="Left" Height="40" Margin="150,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontFamily="Franklin Gothic Medium"/>
+        <TextBox x:Name="Input0" HorizontalAlignment="Left" Height="40" Margin="150,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontFamily="Franklin Gothic Demi"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="50,100,0,0" TextWrapping="Wrap" Text="Zadej 2. číslo" VerticalAlignment="Top" Width="100" FontFamily="Franklin Gothic Medium" FontSize="18"/>
+        <Button x:Name="Calculate" Content="Spočítat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="250,70,0,0" Height="50" Click="Calculate_Click" FontFamily="Franklin Gothic Medium"/>
+        <TextBlock x:Name="OutputField" HorizontalAlignment="Left" Height="32" Margin="380,88,0,0" TextWrapping="Wrap" Text="Výstup" VerticalAlignment="Top" Width="410" FontFamily="Franklin Gothic Medium"/>
+        <TextBlock x:Name="OutputField2" HorizontalAlignment="Left" Height="32" Margin="380,120,0,0" TextWrapping="Wrap" Text="Výstup Největší Dělitel" VerticalAlignment="Top" Width="410" FontFamily="Franklin Gothic Heavy" TextDecorations="Underline"/>
+
 
     </Grid>
 </Page>
