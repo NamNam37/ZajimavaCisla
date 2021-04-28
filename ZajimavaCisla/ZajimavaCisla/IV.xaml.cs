@@ -25,23 +25,8 @@ namespace ZajimavaCisla
             InitializeComponent();
         }
 
-        private void Calculate_Click(object sender, RoutedEventArgs e)
+        public HashSet<long> Prvocisla(long vstupniHodnota0, long vstupniHodnota1)
         {
-            bool ValidniINP0 = long.TryParse(Input0.Text, out long input0);
-            bool ValidniINP1 = long.TryParse(Input1.Text, out long input1);
-
-            if (ValidniINP0 == false || ValidniINP1 == false)
-            {
-                OutputField.Text = "Vstupní hodnoty musí být pouze numerické.";
-            }
-            else if (input0 <= 0 || input1 <= 0)
-            {
-                OutputField.Text = "Vstupní hodnoty musí být positivní.";
-            }
-            else
-            {
-                long vstupniHodnota0 = input0;
-                long vstupniHodnota1 = input1;
                 HashSet<long> hashSetPrvocisla = new HashSet<long>();
 
                 if (vstupniHodnota0 <= 2)
@@ -76,6 +61,27 @@ namespace ZajimavaCisla
                         hashSetPrvocisla.Add(g);
                     }
                 }
+                return hashSetPrvocisla;
+        }
+
+        private void Calculate_Click(object sender, RoutedEventArgs e)
+        {
+            bool ValidniINP0 = long.TryParse(Input0.Text, out long input0);
+            bool ValidniINP1 = long.TryParse(Input1.Text, out long input1);
+
+            if (ValidniINP0 == false || ValidniINP1 == false)
+            {
+                OutputField.Text = "Vstupní hodnoty musí být pouze numerické.";
+            }
+            else if (input0 <= 0 || input1 <= 0)
+            {
+                OutputField.Text = "Vstupní hodnoty musí být positivní.";
+            }
+            else
+            {
+                HashSet<long> hashSetPrvocisla = new HashSet<long>();
+                hashSetPrvocisla = Prvocisla(input0, input1);
+                
                 string output = "";
                 foreach (long c in hashSetPrvocisla)
                 {

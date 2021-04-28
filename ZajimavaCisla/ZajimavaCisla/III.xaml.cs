@@ -40,6 +40,7 @@ namespace ZajimavaCisla
             }
             else
             {
+
             }
         }
     }
